@@ -31,3 +31,34 @@ const gen = numbers();
 console.log(gen.next());
 console.log(gen.next());
 
+//-------------------------------------------Litle history----------------------------
+function* shopping() {
+    //Stuff on the sidewalk
+
+    //Walking down the sidewalk
+
+    //Go into the store with cash
+
+    const stuffFromStore = yield 'cash';
+
+    // Walking to the laundry place
+    const cleanClothes = yield 'laundry';
+
+    //Walking back home
+    return [stuffFromStore, cleanClothes];
+}
+
+//stuff in the store
+const gen = shopping();
+
+console.log(gen.next()); // Leaving our home
+
+// Walked into the the store
+
+// Walking up and down the aisles..
+
+// Purchase our stuff
+
+console.log(gen.next('groceries')); // Leaving the store with groseries
+
+console.log(gen.next('Clean clothes'));
