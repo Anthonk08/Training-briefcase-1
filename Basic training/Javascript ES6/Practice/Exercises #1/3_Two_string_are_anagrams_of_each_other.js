@@ -2,6 +2,14 @@
 Two Strings Are Anagrams of Each Other.
 Create a function that takes in two strings as two parameters and returns a boolean that indicates whether
 or not the first string is an anagram of the second string.
+
+split() divide un objeto de tipo String en un array (vector) de cadenas mediante la separación de la cadena
+en subcadenas.
+
+sort() ordena los elementos de un arreglo (array) localmente y devuelve el arreglo ordenado.
+
+join() une todos los elementos de una matriz en una cadena y
+devuelve esta cadena.
 */
 
 const anagrama = (string1, string2) => {

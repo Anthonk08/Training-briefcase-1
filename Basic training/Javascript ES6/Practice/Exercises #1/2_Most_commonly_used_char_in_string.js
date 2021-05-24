@@ -1,6 +1,9 @@
 /*
 Most Commonly Used Character in String.
 Write a function that takes a string, and returns the character that is most commonly used in the string.
+
+split() divide un objeto de tipo String en un array (vector) de cadenas mediante la separación de la cadena
+en subcadenas.
 */
 
 const caracterMasMencionado = palabra => {
