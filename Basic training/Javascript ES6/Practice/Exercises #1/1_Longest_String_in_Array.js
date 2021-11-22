@@ -4,7 +4,6 @@ Write a function that accepts an array of strings. Return the longest string.
 */
 
 fruits = ['Avocado', 'Banana', 'Coconut', 'Grapefruit', 'Tomato', 'Strawberry', 'Raspberry', 'Peach', 'AAAAAAAAAAAAAAAAAAAAAAAAAA'];
-
 let word = '';
 fruits.forEach(fruit => {
     if(fruit.length > word.length){
@@ -12,3 +11,5 @@ fruits.forEach(fruit => {
     }
 });
 console.log(word);
+
+//usar const y usando la funcion reduce.

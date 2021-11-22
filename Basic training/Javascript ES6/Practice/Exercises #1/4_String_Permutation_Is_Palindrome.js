@@ -19,3 +19,4 @@ console.log(palindrome('ana')); //true
 console.log(palindrome('avion'));//false
 
 
+//Buscar una manera que no contenga split('').reverse().join('')

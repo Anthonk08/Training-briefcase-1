@@ -5,7 +5,7 @@ Determine if the input number is an Armstrong number. Return either true or fals
 */
 
 const armstrongNumber = number => {
-    if(number <= 100 || number > 999){
+    if(number <= 100){
         return false;
     }
     let numStr = String(number);

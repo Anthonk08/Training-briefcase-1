@@ -17,3 +17,7 @@ const sortingObjects = numbers => {
 
 console.log(sortingObjects([1, 11, 27, 2, 34, 123]));
 console.log(sortingObjects([-1, -11, -27, -2, -34, -123]));
+console.log(sortingObjects([-1, -11, -27, 2, 34, 123, 0]));
+
+//Elegir si lo quiero ascendente o descendente, si no elegio ninguno por Default lo ponga ascendente.
+//Que pueda ordenar letras

@@ -24,3 +24,6 @@ const anagrama = (string1, string2) => {
 console.log(anagrama('amor', 'roma'));
 console.log(anagrama('aaa', 'aaaaaa'));
 console.log(anagrama('poder', 'norma'));
+
+//Crear una funcion para recorrer cada palabra, no reciclar code
+//Mejores nombres y realizarlo sin utilizar split, sort, join

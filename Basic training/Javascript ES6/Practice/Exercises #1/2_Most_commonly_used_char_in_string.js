@@ -18,5 +18,6 @@ const caracterMasMencionado = palabra => {
     return letraRepetida;
 };
 
+
+console.log(caracterMasMencionado('Pedro lava el auto y Maria revisa las facturas')); //ojo
 console.log(caracterMasMencionado('hipopotamo')); //La letras que mas se repite es la O
-console.log(caracterMasMencionado('Anthony')); //La letras que mas se repite es la n
