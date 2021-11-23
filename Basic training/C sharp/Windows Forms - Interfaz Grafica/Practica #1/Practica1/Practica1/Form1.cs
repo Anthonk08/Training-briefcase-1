@@ -17,5 +17,14 @@ namespace Practica1
             InitializeComponent();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnSaludo_Click(object sender, EventArgs e)
+        {
+            lblMensaje.Text = "Hola Mundo!!";
+        }
     }
 }
