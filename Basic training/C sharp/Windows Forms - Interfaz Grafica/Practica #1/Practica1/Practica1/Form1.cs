@@ -25,6 +25,18 @@ namespace Practica1
         private void btnSaludo_Click(object sender, EventArgs e)
         {
             lblMensaje.Text = "Hola Mundo!!";
+            this.Text = "Hola a todos!!";
+        }
+
+        private void btnDespedida_Click(object sender, EventArgs e)
+        {
+            lblMensaje.Text = "Nos vemos, chicos!!";
+            this.Text = "Bye!";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            lblMensaje.Text = "";
         }
     }
 }
