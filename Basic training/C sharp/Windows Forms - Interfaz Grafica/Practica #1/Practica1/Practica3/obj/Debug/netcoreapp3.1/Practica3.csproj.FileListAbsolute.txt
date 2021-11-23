@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica3\obj\Debug\netcoreapp3.1\Practica3.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica3\obj\Debug\netcoreapp3.1\Practica3.Form1.resources
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica3\obj\Debug\netcoreapp3.1\Practica3.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica3\obj\Debug\netcoreapp3.1\Practica3.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica3\obj\Debug\netcoreapp3.1\Practica3.AssemblyInfo.cs
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica3\obj\Debug\netcoreapp3.1\Practica3.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica3\bin\Debug\netcoreapp3.1\Practica3.exe
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica3\bin\Debug\netcoreapp3.1\Practica3.deps.json
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica3\bin\Debug\netcoreapp3.1\Practica3.runtimeconfig.json
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica3\bin\Debug\netcoreapp3.1\Practica3.runtimeconfig.dev.json
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica3\bin\Debug\netcoreapp3.1\Practica3.dll
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica3\bin\Debug\netcoreapp3.1\Practica3.pdb
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica3\obj\Debug\netcoreapp3.1\Practica3.dll
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica3\obj\Debug\netcoreapp3.1\Practica3.pdb
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica3\obj\Debug\netcoreapp3.1\Practica3.genruntimeconfig.cache
