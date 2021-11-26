@@ -43,7 +43,7 @@ namespace Practica3
             // 
             // txtNumero1
             // 
-            this.txtNumero1.Location = new System.Drawing.Point(253, 56);
+            this.txtNumero1.Location = new System.Drawing.Point(163, 55);
             this.txtNumero1.Name = "txtNumero1";
             this.txtNumero1.Size = new System.Drawing.Size(126, 27);
             this.txtNumero1.TabIndex = 0;
@@ -53,7 +53,7 @@ namespace Practica3
             // 
             this.lblNumero1.AutoSize = true;
             this.lblNumero1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNumero1.Location = new System.Drawing.Point(101, 52);
+            this.lblNumero1.Location = new System.Drawing.Point(21, 55);
             this.lblNumero1.Name = "lblNumero1";
             this.lblNumero1.Size = new System.Drawing.Size(104, 28);
             this.lblNumero1.TabIndex = 1;
@@ -63,7 +63,7 @@ namespace Practica3
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(101, 122);
+            this.label1.Location = new System.Drawing.Point(21, 118);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 28);
             this.label1.TabIndex = 2;
@@ -71,7 +71,7 @@ namespace Practica3
             // 
             // txtNumero2
             // 
-            this.txtNumero2.Location = new System.Drawing.Point(254, 123);
+            this.txtNumero2.Location = new System.Drawing.Point(164, 118);
             this.txtNumero2.Name = "txtNumero2";
             this.txtNumero2.Size = new System.Drawing.Size(125, 27);
             this.txtNumero2.TabIndex = 3;
@@ -81,7 +81,7 @@ namespace Practica3
             // 
             this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblResultado.Location = new System.Drawing.Point(101, 176);
+            this.lblResultado.Location = new System.Drawing.Point(21, 172);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(165, 38);
             this.lblResultado.TabIndex = 4;
@@ -90,7 +90,7 @@ namespace Practica3
             // btnSuma
             // 
             this.btnSuma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSuma.Location = new System.Drawing.Point(447, 46);
+            this.btnSuma.Location = new System.Drawing.Point(334, 43);
             this.btnSuma.Name = "btnSuma";
             this.btnSuma.Size = new System.Drawing.Size(60, 40);
             this.btnSuma.TabIndex = 5;
@@ -101,7 +101,7 @@ namespace Practica3
             // btnResta
             // 
             this.btnResta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnResta.Location = new System.Drawing.Point(535, 46);
+            this.btnResta.Location = new System.Drawing.Point(411, 43);
             this.btnResta.Name = "btnResta";
             this.btnResta.Size = new System.Drawing.Size(60, 40);
             this.btnResta.TabIndex = 6;
@@ -112,7 +112,7 @@ namespace Practica3
             // btnMultiplicar
             // 
             this.btnMultiplicar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnMultiplicar.Location = new System.Drawing.Point(447, 113);
+            this.btnMultiplicar.Location = new System.Drawing.Point(334, 105);
             this.btnMultiplicar.Name = "btnMultiplicar";
             this.btnMultiplicar.Size = new System.Drawing.Size(60, 40);
             this.btnMultiplicar.TabIndex = 7;
@@ -123,7 +123,7 @@ namespace Practica3
             // btnDividir
             // 
             this.btnDividir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDividir.Location = new System.Drawing.Point(535, 113);
+            this.btnDividir.Location = new System.Drawing.Point(411, 105);
             this.btnDividir.Name = "btnDividir";
             this.btnDividir.Size = new System.Drawing.Size(60, 40);
             this.btnDividir.TabIndex = 8;
@@ -133,7 +133,7 @@ namespace Practica3
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(501, 230);
+            this.btnClose.Location = new System.Drawing.Point(377, 230);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(94, 29);
             this.btnClose.TabIndex = 9;
@@ -145,7 +145,7 @@ namespace Practica3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(616, 271);
+            this.ClientSize = new System.Drawing.Size(499, 271);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnDividir);
             this.Controls.Add(this.btnMultiplicar);
