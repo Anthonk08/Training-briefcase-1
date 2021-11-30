@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Practica9_Examen1/1.0.0": {
+        "runtime": {
+          "Practica9_Examen1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Practica9_Examen1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
