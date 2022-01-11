@@ -59,3 +59,8 @@ while(num5 >= 0) {
     }
     num5 -= 1;
 }
+
+//FOR
+for(let i = 0; i < 10; i++){
+    console.log("Esta es la "+ i +" vez, que se imprime el mensaje!");
+}

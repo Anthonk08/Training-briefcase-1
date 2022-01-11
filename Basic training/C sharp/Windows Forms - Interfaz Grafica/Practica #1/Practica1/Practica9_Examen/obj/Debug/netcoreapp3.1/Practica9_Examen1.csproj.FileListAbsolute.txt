@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica9_Examen\bin\Debug\netcoreapp3.1\Practica9_Examen1.exe
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica9_Examen\bin\Debug\netcoreapp3.1\Practica9_Examen1.deps.json
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica9_Examen\bin\Debug\netcoreapp3.1\Practica9_Examen1.runtimeconfig.json
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica9_Examen\bin\Debug\netcoreapp3.1\Practica9_Examen1.runtimeconfig.dev.json
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica9_Examen\bin\Debug\netcoreapp3.1\Practica9_Examen1.dll
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica9_Examen\bin\Debug\netcoreapp3.1\Practica9_Examen1.pdb
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica9_Examen\obj\Debug\netcoreapp3.1\Practica9_Examen1.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica9_Examen\obj\Debug\netcoreapp3.1\Practica9_Examen.Form1.resources
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica9_Examen\obj\Debug\netcoreapp3.1\Practica9_Examen1.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica9_Examen\obj\Debug\netcoreapp3.1\Practica9_Examen1.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica9_Examen\obj\Debug\netcoreapp3.1\Practica9_Examen1.AssemblyInfo.cs
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica9_Examen\obj\Debug\netcoreapp3.1\Practica9_Examen1.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica9_Examen\obj\Debug\netcoreapp3.1\Practica9_Examen1.dll
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica9_Examen\obj\Debug\netcoreapp3.1\Practica9_Examen1.pdb
+C:\Users\user\Desktop\Training-briefcase-1\Basic training\C sharp\Windows Forms - Interfaz Grafica\Practica #1\Practica1\Practica9_Examen\obj\Debug\netcoreapp3.1\Practica9_Examen1.genruntimeconfig.cache
