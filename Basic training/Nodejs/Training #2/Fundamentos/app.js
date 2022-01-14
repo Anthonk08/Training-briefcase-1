@@ -17,6 +17,7 @@ console.log(cowsay.think({
 }));
 */
 
+/*
 const http = require('http');
 //Creamos el servidor
 //Siempre vamos a resibir un request y una respuesta.;
@@ -31,3 +32,33 @@ server.listen(puerto, () => {
 
 //Para poder ver el request, vamos a un navegador y ponemos: localhost:3000
 //ctrl + c, para terminar con el servidor
+*/
+
+const express = require('express');
+const app = express();
+
+const port = 3000;
+const name = "Anthony Tineo";
+// El  '/' significa desde la paginba raiz
+//Pagina raiz, estoy hyablando del localhost:3000
+
+//Middleware
+app.use(express.static(__dirname + "/public"));
+
+//Rutas
+app.get('/', (req, res) => {
+    res.send('Mi respuesta desde express!!');
+});
+
+//Pagina servicios
+app.get('/servicios', (req, res) => {
+    res.send(`Hola te hablo desde la pagina "SERVICIOS", hecho por ${name}`);
+});
+
+app.listen(port, () => {
+    console.log("Servidor a su servicio en el puerto:", port);
+});
+
+app.use((req, res, next) => {
+    res.status(404).sendFile(__dirname + "/public/404.html")
+});
