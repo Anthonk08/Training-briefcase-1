@@ -1,3 +1,4 @@
-const frutas = ["Platano", "Manzana", "Platano", "Pera"];
+//Aqui estamos requiriendo el array frutas que exportamos
+const {frutas, dinero} = require('./frutas');
 
 frutas.forEach(fruta => console.log(fruta));
