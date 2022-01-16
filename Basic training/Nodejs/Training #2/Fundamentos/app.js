@@ -37,7 +37,7 @@ server.listen(puerto, () => {
 const express = require('express');
 const app = express();
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 const name = "Anthony Tineo";
 // El  '/' significa desde la paginba raiz
 //Pagina raiz, estoy hyablando del localhost:3000
