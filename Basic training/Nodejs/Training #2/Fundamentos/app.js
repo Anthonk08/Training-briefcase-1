@@ -42,17 +42,23 @@ const name = "Anthony Tineo";
 // El  '/' significa desde la paginba raiz
 //Pagina raiz, estoy hyablando del localhost:3000
 
+//Motor de plantillas
+app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
+
 //Middleware
 app.use(express.static(__dirname + "/public"));
 
 //Rutas
+//Pagina principal
 app.get('/', (req, res) => {
-    res.send('Mi respuesta desde express!!');
+    //res.send('Mi respuesta desde express!!');
+    res.render("index", {titulo: "Pagina dinamica"});
 });
 
 //Pagina servicios
 app.get('/servicios', (req, res) => {
-    res.send(`Hola te hablo desde la pagina "SERVICIOS", hecho por ${name}`);
+    res.render("servicios", {tituloServicio: "Este es un mensaje de la pagina dinamica: SERVICIOS"});
 });
 
 app.listen(port, () => {
@@ -60,5 +66,5 @@ app.listen(port, () => {
 });
 
 app.use((req, res, next) => {
-    res.status(404).sendFile(__dirname + "/public/404.html")
+    res.status(404).render("404", {titulo: 404, descripcion: "Titulo del sitio web"});
 });
