@@ -35,8 +35,8 @@ server.listen(puerto, () => {
 */
 
 const express = require('express');
-const app = express();
 const bodyParser = require('body-parser');
+const app = express();
 
 //Los Middleware
 // parse application/x-www-form-urlencoded
