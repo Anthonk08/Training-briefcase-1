@@ -36,11 +36,30 @@ server.listen(puerto, () => {
 
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
+
+//Los Middleware
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
+// parse application/json
+app.use(bodyParser.json());
+
+// Exportamos los datos del archivo .env
+require('dotenv').config()
 
 const port = process.env.PORT || 3000;
 const name = "Anthony Tineo";
 // El  '/' significa desde la paginba raiz
 //Pagina raiz, estoy hyablando del localhost:3000
+
+//Conexion a la base de datos
+const mongoose = require('mongoose');
+
+const uri = `mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@cluster0.2xdgh.mongodb.net/${process.env.DBNAME}?retryWrites=true&w=majority`;
+
+mongoose.connect(uri)
+    .then(() => console.log('Base de datos conectada, felicidades!!'))
+    .catch(e => console.log(e))
 
 //Motor de plantillas
 app.set('view engine', 'ejs');
@@ -50,6 +69,7 @@ app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + "/public"));
 
 //Rutas
+/*
 //Pagina principal
 app.get('/', (req, res) => {
     //res.send('Mi respuesta desde express!!');
@@ -60,6 +80,11 @@ app.get('/', (req, res) => {
 app.get('/servicios', (req, res) => {
     res.render("servicios", {tituloServicio: "Este es un mensaje de la pagina dinamica: SERVICIOS"});
 });
+*/
+
+//Llamando la rutra creada en RutasWeb.js
+app.use('/', require('./router/RutasWeb'));
+app.use('/mascotas', require('./router/Mascotas'));
 
 app.listen(port, () => {
     console.log("Servidor a su servicio en el puerto:", port);
