@@ -1,0 +1,32 @@
+[
+    {   "name": "Anthony",
+        "email": "anthonytineocabreja3@gmail;;.com",
+        "password": "",
+        "age": "",
+        "creationDate": ""
+    },
+
+    {
+        "name": "Keila",
+        "email": "keilatineo@gmail;;.com",
+        "password": "",
+        "age": "",
+        "creationDate": ""
+    },
+
+    {
+        "name": "Rosario",
+        "email": "rosariocabreja@gmail;;.com",
+        "password": "",
+        "age": "",
+        "creationDate": ""
+    },
+
+    {
+        "name": "Olegaria",
+        "email": "olegariacabrera@gmail;;.com",
+        "password": "",
+        "age": "",
+        "creationDate": ""
+    }
+]
