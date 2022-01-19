@@ -2,8 +2,9 @@ const { Router } = require('express');
 
 const router = Router();
 const fs = require('fs');
-// eslint-disable-next-line import/no-unresolved
-const uuid = require('uuid/v4');
+const uuid = require('uuid/v4'); // Para crear id aletorios
+
+const bcrypt = require('bcrypt');
 
 const dateNow = new Date();
 
@@ -12,21 +13,17 @@ const jsonUsuarios = fs.readFileSync('/src/usuarios.json', 'utf-8');
 // eslint-disable-next-line prefer-const
 let usuarios = JSON.parse(jsonUsuarios);
 
-router.get('/', (req, res) => {
+// REST API CRUD
+router.get('/api', (req, res) => {
   res.send('usuarios.json');
 });
 
 router.post('/', (req, res) => {
-  let {
-    // eslint-disable-next-line prefer-const
+  const {
     name,
-    // eslint-disable-next-line prefer-const
     email,
-    // eslint-disable-next-line prefer-const
     password,
-    // eslint-disable-next-line prefer-const
     age,
-    // eslint-disable-next-line prefer-const
     creationDate,
   } = req.body;
 
@@ -36,12 +33,22 @@ router.post('/', (req, res) => {
     return;
   }
 
+  // Encriptando la contraseña
+  const palabraEncriptada = bcrypt.hash(password, 10, (err, wordPassword) => {
+    if (err) {
+      console.log('Error encriptando: ', err);
+      return err;
+    } else {
+    console.log(`La contraseña encriptada es: ${wordPassword}`);
+    return wordPassword;
+    };
+
   // eslint-disable-next-line prefer-const
   let newUsuario = {
     id: uuid(),
     name,
     email,
-    password,
+    password: palabraEncriptada,
     age,
     creationDate: dateNow,
   };

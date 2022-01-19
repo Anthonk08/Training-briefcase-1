@@ -1,4 +1,5 @@
 const express = require('express');
+const router = require('./routes/index');
 
 const app = express();
 // The path module allows us to concatenate directories
@@ -13,7 +14,7 @@ app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: false }));
 
 // Routes
-app.use(require('./routes/index'));
+app.use(router);
 
 // Static
 app.use(express.static(path.join(__dirname, 'public')));
