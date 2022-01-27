@@ -1,0 +1,29 @@
+{
+  "productos": [
+    {
+      "id": "4050c2a8-0e2c-4c87-9f99-81e26ad774ec",
+      "name": "Azucar",
+      "price": 85,
+      "listaDeCategorias": [
+        "condimento",
+        "especia"
+      ],
+      "description": "granitos blancos",
+      "createDate": "2022-1-27"
+    },
+    {
+      "id": "616beff5-fc2d-457f-b943-700e7b146da3",
+      "name": "Arroz",
+      "price": 125,
+      "description": "granos blancos",
+      "createDate": "2022-1-27"
+    },
+    {
+      "id": "33657d24-1b02-449e-9b30-a259e949c290",
+      "name": "habichuelas rojas",
+      "price": 50,
+      "description": "granos rojo",
+      "createDate": "2022-1-27"
+    }
+  ]
+}
