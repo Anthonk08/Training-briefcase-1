@@ -1,0 +1,28 @@
+{
+  "usuarios": [
+    {
+      "id": "5c7a27fb-bcfa-4fd4-9bf0-c7c083e17668",
+      "name": "Anthony Tineo Cabreja",
+      "age": "26",
+      "creation_date": "2022-1-27",
+      "email": "anthonytineocabreja@gmail.com",
+      "password": "$2a$10$FIlEY0XBFlWBszgOgasQNe2rN1Dz2BLjJsazy9bZVn2ICHkqm4lQy"
+    },
+    {
+      "id": "d242f8b5-163a-412b-8651-134f6b3cf255",
+      "name": "Keila Tineo Cabreja",
+      "age": "23",
+      "creation_date": "2022-1-27",
+      "email": "keilatineocabreja@hotmail.com",
+      "password": "987654321"
+    },
+    {
+      "id": "f9fe2883-6eb3-44eb-a5ba-5da40902d929",
+      "name": "fdgdasfa",
+      "age": "20003",
+      "creation_date": "2022-1-27",
+      "email": "sdafsafdsafafasd@gmail.com",
+      "password": "$2a$10$uQcWehu74kZ4xD2YXaG8J.xgEvr2GZrhK8DT8dV4Qhby/GyNXcEGy"
+    }
+  ]
+}
