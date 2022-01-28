@@ -5,8 +5,8 @@
       "name": "Azucar",
       "price": 85,
       "listaDeCategorias": [
-        "condimento",
-        "especia"
+        "condimentos",
+        "especias"
       ],
       "description": "granitos blancos",
       "createDate": "2022-1-27"
@@ -23,6 +23,13 @@
       "name": "habichuelas rojas",
       "price": 50,
       "description": "granos rojo",
+      "createDate": "2022-1-27"
+    },
+    {
+      "id": "cb6dcba3-f821-4ad0-83d5-cfb2dc04ed75",
+      "name": "Platanos",
+      "price": 22,
+      "description": "verdura verde, larga",
       "createDate": "2022-1-27"
     }
   ]

@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js --ignore db.json"
+    "nodemon": "nodemon src/index.js --ignore db.json",
+    "eslint": "eslint '**/*.js' --ignore-pattern node_modules/",
+    "prettier": "prettier-eslint '**/*.js' --write"
   },
   "keywords": [],
   "author": "",
