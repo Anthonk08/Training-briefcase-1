@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./src/index.js --ignore db.json"
+    "nodemon": "nodemon ./src/index.js --ignore db.json"
   },
   "keywords": [],
   "author": "",
