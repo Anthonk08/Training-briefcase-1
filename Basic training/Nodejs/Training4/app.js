@@ -1,6 +1,8 @@
-//El pathmódulo proporciona utilidades para trabajar con rutas de archivos y directorios
-const path = require('path');
+const os = require('os');
 
-var pathObj = path.parse(__filename);
+let totalMemory = os.totalmem();
+let freeMemory = os.freemem();
 
-console.log(pathObj);
+console.log(`El total de memoria es: ${totalMemory}`);
+
+console.log(`El espacio de memoria libre es: ${freeMemory}`);
