@@ -1,8 +1,36 @@
-const os = require('os');
+const fs = require('fs');
 
-let totalMemory = os.totalmem();
-let freeMemory = os.freemem();
+/*
+const files = fs.readdirSync('./');
+console.log(files);
+*/
 
-console.log(`El total de memoria es: ${totalMemory}`);
+fs.readdir('$', function(err, files) {
+    if (err) console.log(`ERROR ${err}`);
+    else console.log(files);
+});
 
-console.log(`El espacio de memoria libre es: ${freeMemory}`);
+// callback 1
+function callback(){
+    console.log(`Hola soy un callback`);
+}
+
+function mensaje(fn) {
+    return fn();
+}
+
+mensaje(callback);
+
+// callback 2
+function mensaje1(fn) {
+    setTimeout(() => {
+        console.log(`mensaje 1`);
+        fn();
+    }, 3000);
+}
+
+function mensaje2() {
+    console.log(`Mensaje 2`);
+}
+
+mensaje1(mensaje2);
