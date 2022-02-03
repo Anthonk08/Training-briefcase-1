@@ -1,11 +1,13 @@
-console.log(__filename);
-console.log(__dirname);
+const EventEmitter = require('events');
 
 var url = 'https://anthonyWeb.com';
 
-function log(message) {
-    console.log(message);
+class Logger extends EventEmitter {
+    log(message) {
+        console.log(message);
+        // Raise an event
+        this.emit(`messageLogged`, { id: 1, url: url});
+    }
 }
 
-
-module.exports = log;
+module.exports = Logger;

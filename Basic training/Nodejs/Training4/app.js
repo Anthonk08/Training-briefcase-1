@@ -1,36 +1,11 @@
-const fs = require('fs');
+const EventEmitter = require('events');
 
-/*
-const files = fs.readdirSync('./');
-console.log(files);
-*/
+const Logger = require('./logger');
+const logger = new Logger();
 
-fs.readdir('$', function(err, files) {
-    if (err) console.log(`ERROR ${err}`);
-    else console.log(files);
+// Register a listener
+logger.on('messageLogged', arg => { // e, event Arg
+    console.log(`Lisatener call`, arg);
 });
 
-// callback 1
-function callback(){
-    console.log(`Hola soy un callback`);
-}
-
-function mensaje(fn) {
-    return fn();
-}
-
-mensaje(callback);
-
-// callback 2
-function mensaje1(fn) {
-    setTimeout(() => {
-        console.log(`mensaje 1`);
-        fn();
-    }, 3000);
-}
-
-function mensaje2() {
-    console.log(`Mensaje 2`);
-}
-
-mensaje1(mensaje2);
+logger.log('message');
