@@ -7,5 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Anthony Tineo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^6.2.0",
+    "underscore": "^1.13.2"
+  }
 }
