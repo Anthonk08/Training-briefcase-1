@@ -1,11 +1,17 @@
-const EventEmitter = require('events');
+const { Socket } = require('dgram');
+const http = require('http');
 
-const Logger = require('./logger');
-const logger = new Logger();
+const server = http.createServer((req, res) => {
+    if (req.url === '/') {
+        res.write(`Hola Anthony`);
+        res.end();
+    }
 
-// Register a listener
-logger.on('messageLogged', arg => { // e, event Arg
-    console.log(`Lisatener call`, arg);
+    if (req.url === `/api/courses`) {
+        res.write(JSON.stringify([1, 2, 3, 4, 5, 6]));
+        res.end();
+    }
 });
 
-logger.log('message');
+const port = 3000;
+server.listen(port, () => console.log(`El server ${port} esta correcto!`));
