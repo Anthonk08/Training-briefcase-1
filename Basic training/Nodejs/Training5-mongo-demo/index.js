@@ -4,24 +4,66 @@ mongoose.connect('mongodb://localhost/playground')
     .catch(err => console.log('No se pudo conectar a MongoDB...', err));
 
 const courseSchema = new mongoose.Schema({
-    name: String,
+    name: {
+        type: String,
+        required: true,
+        minlength: 5,
+        maxlength: 255
+    },
+    category: {
+        type: String,
+        required: true,
+        enum: ['web', 'mobile', 'network'],
+        lowercase: true,
+        // uppercase: true,
+        trim: true
+    },
     author: String,
-    tags: [ String ],
+    tags: {
+        type: Array,
+        validate: {
+            isAsync: true,
+            validator: function(v, callback) {
+                setTimeout(() => {
+                    const result = v && v.length > 0;
+                    callback(result);
+                }, 4000);
+            },
+            message: 'El curso debe tener por lo menos un tag'
+        }
+    },
     date: { type: Date, default: Date.now},
-    isPublished: Boolean
+    isPublished: Boolean,
+    price: {
+        type: Number,
+        required: function() { return this.isPublished; },
+        min: 10,
+        max: 200,
+        get: v => Math.round(v),
+        set: v => Math.round(v)
+    }
 });
 
 const Course = mongoose.model('Course', courseSchema);
 
 async function createCourse() {
     const course = new Course({
-        name: 'Angular Course',
-        author: 'Anthony Tineo',
-        tags: ['angular', 'frontend'],
-        isPublished: true
+        name: 'React Course',
+        category: 'web',
+        author: 'Keila',
+        tags: 'frontend',
+        isPublished: true,
+        price: 15.8
     });
-    const result = await course.save();
-    // console.log(result);
+
+    try {
+        const result = await course.save();
+        console.log(result);
+    }
+    catch (ex) {
+        for(field in ex.errors)
+            console.log(ex.errors[field].message);
+    }
 };
 
 // eq (equal)
@@ -37,13 +79,13 @@ async function getCourses() {
     const pageSize = 10;
 
     const courses = await Course
-        .find({ author: 'Anthony Tineo', isPublished: true })
-        .skip((pageNumber - 1) * pageSize)
-        .limit(pageSize)
+        .find({ _id: '620dfccdcdf31420901f39e2' })
+        // .skip((pageNumber - 1) * pageSize)
+        // .limit(pageSize)
         .sort({ name: 1 })
-        .select({ name: 1, tags: 1 });
+        .select({ name: 1, tags: 1, price: 1 });
         // .count();
-        // console.log(courses);
+        console.log(courses[0].price);
 }
 
 async function updateCourse(id) {
@@ -62,8 +104,8 @@ async function removeCourse(id) {
     console.log(resultRemove);
 }
 
-removeCourse('620d88c43848a168f8b753b8');
+// removeCourse('620de69f3bef8618c4e9f2de');
 // updateCourse('620d88c43848a168f8b753b8');
 // createCourse();
-// getCourses();
+getCourses();
 
