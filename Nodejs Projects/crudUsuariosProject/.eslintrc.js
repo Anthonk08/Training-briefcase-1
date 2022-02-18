@@ -12,9 +12,10 @@ module.exports = {
   plugins: ['prettier'],
   rules: {
     'linebreak-style': 0,
+    'no-unused-vars': 'warn',
     'no-console': 0,
-    'eol-last': 0,
-    'prettier/prettier': ['error', { endOfLine: 'auto' }],
-    semi: 'error',
+    'no-unexpected-multiline': 'warn',
+    'eol-last': 1,
+    semi: 0,
   },
 };

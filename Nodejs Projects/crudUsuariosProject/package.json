@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "nodemon": "nodemon src/index.js --ignore db.json",
-    "lint": "eslint '**/*.js'",
-    "lint:fix": "prettier-eslint '**/*.js' --write",
+    "lint": "eslint ./ --fix --ignore-pattern node_modules/",
+    "lint:fix": "prettier-eslint ./ --write",
     "text:coveralls": "jest --coverage && coveralls < coverage/lcov.info"
   },
   "husky": {
@@ -24,8 +24,14 @@
   "author": "Anthony Tineo",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "ci": "^2.1.1",
+    "config": "^3.3.7",
     "express": "^4.17.2",
+    "joi": "^17.6.0",
+    "joi-objectid": "^4.0.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.2.2",
     "nodemon": "^2.0.15",
     "prettier": "^2.5.1"
   },
