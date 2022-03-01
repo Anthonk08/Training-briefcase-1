@@ -1,0 +1,26 @@
+{
+  "name": "async",
+  "version": "1.0.0",
+  "description": "Aprendiendo Asincronismo en JS",
+  "main": "index.js",
+  "scripts": {
+    "callback": "node ./src/callback/index.js",
+    "callback:api": "node ./src/callback/api.js",
+    "promise": "node ./src/promise/index.js",
+    "promise:api": "node ./src/promise/api.js",
+    "async": "node ./src/async/index.js",
+    "async:api": "node ./src/async/api.js"
+  },
+  "keywords": [
+    "callback",
+    "promise",
+    "async",
+    "await"
+  ],
+  "author": "Anthony Tineo",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
