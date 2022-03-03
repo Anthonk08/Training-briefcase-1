@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video 5</title>
+</head>
+<body>
+    <div id="app">
+        <!--
+        <h2>Frutas</h2>
+        <ul>
+            <li v-for="(fruta, index) in frutas" v-bind:key="fruta">{{fruta}}, indice: {{index}}</li>
+        </ul>
+        <hr>
+        -->
+        <h2>Otras frutas</h2>
+        <ul>
+            <li v-for="(otrasFrutas, index) in frutasConId" v-bind:key="otrasFrutas">
+                {{otrasFrutas.id}} - {{otrasFrutas.nombre}}
+                <ul>
+                    <li v-for="pais in frutasConId.paisesOrigen">Pais: {{pais.idPais}} - {{pais.pais}}</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!--
+        <select>
+            <option v-for="fruta in frutasConId" v-bind:value="fruta.id">{{fruta.nombre}}</option>
+        </select>
+        -->
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        // data, methods, props, mounted, created, computed, watch, destroyed
+        const app = {
+            data() {
+                return {
+                    //frutas: ['Manzana', 'Pera', 'Uva'],
+                    frutasConId: [
+                        { id: 1, nombre: 'Limon', paisesOrigen: [ { idPais: 1, pais: 'Rusia' }, { idPais: 2, pais:'Usa' } ] },
+                        { id: 2, nombre: 'Banana', paisesOrigen: [ { idPais: 3, pais:'Irak' }, { idPais: 4, pais:'Iran'} ] },
+                        { id: 3, nombre: 'Naranja', paisesOrigen: [ { idPais: 5, pais:'Francia' }, { idPais: 6, pais:'Alemania'} ] }
+                    ]
+                }
+            }
+        }
+
+        const mountedApp = Vue.createApp(app).mount('#app')
+    </script>
+</body>
+</html>

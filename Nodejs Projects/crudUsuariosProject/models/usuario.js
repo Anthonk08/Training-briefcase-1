@@ -2,40 +2,43 @@ const Joi = require('joi');
 Joi.objectId = require('joi-objectid')(Joi);
 const mongoose = require('mongoose');
 
-const Usuario = mongoose.model('Usuario', new mongoose.Schema({
-  name: {
-    type: String,
-  },
-  email: {
-    type: String,
-    required: true,
-    minlength: 5,
-    maxlength: 255,
-    unique: true,
-    tlds: { allow: ['com', 'net', 'es'] },
-  },
-  password: {
-    type: String,
-    required: true,
-    minlength: 5,
-    maxlength: 1024,
-  },
-  age: {
-    type: String,
-  },
-  gender: {
-    type: String,
-    required: true,
-    minlength: 1,
-    maxlength: 2,
-    uppercase: true,
-  },
-  national_id: {
-    type: String,
-    required: true,
-    maxlength: 11,
-  },
-}));
+const Usuario = mongoose.model(
+  'Usuario',
+  new mongoose.Schema({
+    name: {
+      type: String,
+    },
+    email: {
+      type: String,
+      required: true,
+      minlength: 5,
+      maxlength: 255,
+      unique: true,
+      tlds: { allow: ['com', 'net', 'es'] },
+    },
+    password: {
+      type: String,
+      required: true,
+      minlength: 5,
+      maxlength: 1024,
+    },
+    age: {
+      type: String,
+    },
+    gender: {
+      type: String,
+      required: true,
+      minlength: 1,
+      maxlength: 2,
+      uppercase: true,
+    },
+    national_id: {
+      type: String,
+      required: true,
+      maxlength: 11,
+    },
+  }),
+);
 
 function ValidarUsuario(usuario) {
   const datos = {
@@ -49,7 +52,7 @@ function ValidarUsuario(usuario) {
     national_id: Joi.string().min(5).max(11).required(),
   };
 
-  return (usuario, datos);
+  return usuario, datos;
 }
 
 exports.Usuario = Usuario;

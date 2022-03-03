@@ -38,7 +38,7 @@ router.put('/:id', async (req, res) => {
       gender: req.body.gender,
       national_id: req.body.national_id,
     },
-    { new: true },
+    { new: true }
   );
   if (!usuario) return res.status(404).send('El usuario con el ID no se encuentra.');
   res.send(usuario);
@@ -46,7 +46,7 @@ router.put('/:id', async (req, res) => {
 
 // eslint-disable-next-line consistent-return
 router.delete('/:id', async (req, res) => {
-  const usuario = await Usuario.findByIdAndRemove(req.params.id)
+  const usuario = await Usuario.findByIdAndRemove(req.params.id);
   if (!usuario) return res.status(404).send('El usuario con el ID no se encuentra.');
   res.send(usuario);
 });

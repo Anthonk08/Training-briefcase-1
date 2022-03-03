@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video 3</title>
+</head>
+<body>
+    <div id="app">
+        <label v-bind:title="titulo" v-bind:data-hola="titulo">Saludos!</label>
+        <hr>
+        <button v-on:click="mostrarImagen('/imgs/lobo.jpg')">Imagen 1</button>
+        <button v-on:click="mostrarImagen('/imgs/cuervo.jpg')">Imagen 2</button>
+        <hr>
+        <!-- v-bind es lo mismo que poner : -->
+        <img :src="imagen" :alt="txt">
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        // data, methods, props, mounted, created, computed, watch, destroyed
+        const app = {
+            data() {
+                return {
+                    titulo: 'Este es un titulo dinamico',
+                    imagen: '/imgs/kira caperucita.jpg',
+                    txt: 'Imagen descargada'
+                }
+            },
+            methods: {
+                mostrarImagen(imagen) {
+                    this.imagen = imagen;
+                }
+            }
+        }
+
+        const mountedApp = Vue.createApp(app).mount('#app')
+    </script>
+</body>
+</html>

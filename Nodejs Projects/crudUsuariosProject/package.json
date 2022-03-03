@@ -6,7 +6,7 @@
   "scripts": {
     "nodemon": "nodemon src/index.js --ignore db.json",
     "lint": "eslint ./ --fix --ignore-pattern node_modules/",
-    "lint:fix": "prettier-eslint ./ --write",
+    "prettier": "prettier ./ --write",
     "text:coveralls": "jest --coverage && coveralls < coverage/lcov.info"
   },
   "husky": {
