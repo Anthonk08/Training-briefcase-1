@@ -1,0 +1,47 @@
+{
+  "name": "crudusuariosandproductsproject",
+  "version": "1.0.0",
+  "description": "CRUD de Usuarios y productos",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/app.js --ignore db.json",
+    "lint": "eslint ./ --fix --ignore-pattern node_modules/",
+    "prettier": "prettier ./ --write",
+    "build": "babel src/ --out-dir build",
+    "serve ": "node build/app.js"
+  },
+  "keywords": [],
+  "author": "Anthony Tineo Cabreja",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.4",
+    "nodemon": "^2.0.15",
+    "prettier": "2.5.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js, json, css, md, html}": [
+      "prettier --single-quote --write",
+      "npm run lint",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "joi": "^17.6.0",
+    "mongoose": "^6.2.5"
+  }
+}
