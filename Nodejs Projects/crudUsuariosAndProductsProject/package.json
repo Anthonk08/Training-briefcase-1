@@ -5,11 +5,11 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon --exec babel-node src/app.js --ignore db.json",
+    "start": "nodemon /app.js",
     "lint": "eslint ./ --fix --ignore-pattern node_modules/",
     "prettier": "prettier ./ --write",
     "build": "babel src/ --out-dir build",
-    "serve ": "node build/app.js"
+    "serve": "node build/app.js"
   },
   "keywords": [],
   "author": "Anthony Tineo Cabreja",
@@ -36,12 +36,16 @@
     "*.{js, json, css, md, html}": [
       "prettier --single-quote --write",
       "npm run lint",
+      "npm run build",
       "git add"
     ]
   },
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "express": "^4.17.3",
     "joi": "^17.6.0",
+    "joi-objectid": "^4.0.2",
+    "lodash": "^4.17.21",
     "mongoose": "^6.2.5"
   }
 }
