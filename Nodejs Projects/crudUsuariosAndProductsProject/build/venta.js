@@ -13,12 +13,12 @@ var _mongoose = _interopRequireDefault(require("mongoose"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const Venta = _mongoose.default.model('Venta', new _mongoose.default.Schema({
-  user_id: {
+  nameUser: {
     type: String,
     required: true
   },
-  productos_ids: {
-    valueType: Array
+  productsNames: {
+    type: String
   },
   total_to_pay: {
     type: String
@@ -29,9 +29,9 @@ exports.Venta = Venta;
 
 function ValidarVenta(venta) {
   const datos = {
-    price: _joi.default.number(),
-    amount: _joi.default.number(),
-    price: _joi.default.string().min(1)
+    nameUser: _joi.default.string(),
+    productsNames: _joi.default.string(),
+    total_to_pay: _joi.default.string()
   };
   return venta, datos;
 }

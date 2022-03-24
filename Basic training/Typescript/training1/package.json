@@ -1,0 +1,23 @@
+{
+  "name": "training1",
+  "version": "1.0.0",
+  "description": "Typescript course",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc hola.ts",
+    "tipos_datos": "tsc ./elementos/tipos_datos/tipos_datos.ts",
+    "funciones": "tsc ./elementos/funciones/tipos.ts",
+    "clases": "tsc ./elementos/clases/clases.ts"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "Anthony Tineo",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
