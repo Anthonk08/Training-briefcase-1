@@ -8,7 +8,7 @@
     "start": "nodemon /app.js",
     "lint": "eslint ./ --fix --ignore-pattern node_modules/",
     "prettier": "prettier ./ --write",
-    "build": "babel src/ --out-dir build",
+    "build": "babel models/ --out-dir build",
     "serve": "node build/app.js"
   },
   "keywords": [],
@@ -36,7 +36,6 @@
     "*.{js, json, css, md, html}": [
       "prettier --single-quote --write",
       "npm run lint",
-      "npm run build",
       "git add"
     ]
   },

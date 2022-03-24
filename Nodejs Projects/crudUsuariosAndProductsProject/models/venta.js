@@ -2,12 +2,12 @@ import Joi from 'joi';
 import mongoose from 'mongoose';
 
 const Venta = mongoose.model('Venta', new mongoose.Schema({
-    user_id: {
+    nameUser: {
       type: String,
       required: true,
     },
-    productos_ids: {
-      valueType: Array,
+    productsNames: {
+      type: String,
     },
     total_to_pay: {
       type: String,
@@ -17,9 +17,9 @@ const Venta = mongoose.model('Venta', new mongoose.Schema({
 
 function ValidarVenta(venta) {
   const datos = {
-    price: Joi.number(),
-    amount: Joi.number(),
-    price: Joi.string().min(1),
+    nameUser: Joi.string(),
+    productsNames: Joi.string(),
+    total_to_pay: Joi.string(),
   };
 
   return venta, datos;
