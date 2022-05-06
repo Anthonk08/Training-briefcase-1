@@ -1,7 +1,9 @@
 import Joi from 'joi';
 import mongoose from 'mongoose';
 
-const Usuario = mongoose.model('Usuario', new mongoose.Schema({
+const Usuario = mongoose.model(
+  'Usuario',
+  new mongoose.Schema({
     name: {
       type: String,
       required: true,
@@ -27,7 +29,7 @@ const Usuario = mongoose.model('Usuario', new mongoose.Schema({
       maxlength: 1,
       uppercase: true,
     },
-  }),
+  })
 );
 
 function ValidarUsuario(usuario) {
@@ -41,4 +43,4 @@ function ValidarUsuario(usuario) {
   return usuario, datos;
 }
 
-export {Usuario, ValidarUsuario};
+export { Usuario, ValidarUsuario };

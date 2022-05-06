@@ -1,7 +1,9 @@
 import Joi from 'joi';
 import mongoose from 'mongoose';
 
-const Venta = mongoose.model('Venta', new mongoose.Schema({
+const Venta = mongoose.model(
+  'Venta',
+  new mongoose.Schema({
     nameUser: {
       type: String,
       required: true,
@@ -12,7 +14,7 @@ const Venta = mongoose.model('Venta', new mongoose.Schema({
     total_to_pay: {
       type: String,
     },
-  }),
+  })
 );
 
 function ValidarVenta(venta) {
@@ -25,4 +27,4 @@ function ValidarVenta(venta) {
   return venta, datos;
 }
 
-export {Venta, ValidarVenta};
+export { Venta, ValidarVenta };

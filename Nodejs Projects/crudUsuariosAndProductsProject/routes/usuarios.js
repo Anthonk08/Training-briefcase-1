@@ -1,5 +1,5 @@
 import bcrypt from 'bcrypt';
-import _ from'lodash';
+import _ from 'lodash';
 import express from 'express';
 import { Usuario, ValidarUsuario } from '../models/usuario.js';
 

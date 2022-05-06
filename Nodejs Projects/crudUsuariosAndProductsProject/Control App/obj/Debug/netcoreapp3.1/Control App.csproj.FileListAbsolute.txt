@@ -1,0 +1,23 @@
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\bin\Debug\netcoreapp3.1\Control App.exe
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\bin\Debug\netcoreapp3.1\Control App.deps.json
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\bin\Debug\netcoreapp3.1\Control App.runtimeconfig.json
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\bin\Debug\netcoreapp3.1\Control App.runtimeconfig.dev.json
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\bin\Debug\netcoreapp3.1\Control App.dll
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\bin\Debug\netcoreapp3.1\Control App.pdb
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\bin\Debug\netcoreapp3.1\DotNetEnv.dll
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\bin\Debug\netcoreapp3.1\SeleniumExtras.WaitHelpers.dll
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\bin\Debug\netcoreapp3.1\WebDriver.Support.dll
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\bin\Debug\netcoreapp3.1\WebDriver.dll
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\bin\Debug\netcoreapp3.1\Sprache.dll
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\obj\Debug\netcoreapp3.1\Control App.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\obj\Debug\netcoreapp3.1\Control_App.ControlMaster.resources
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\obj\Debug\netcoreapp3.1\Control_App.Properties.Resources.resources
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\obj\Debug\netcoreapp3.1\Control App.csproj.GenerateResource.cache
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\obj\Debug\netcoreapp3.1\Control App.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\obj\Debug\netcoreapp3.1\Control App.AssemblyInfo.cs
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\obj\Debug\netcoreapp3.1\Control App.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\obj\Debug\netcoreapp3.1\Control App.csproj.CopyComplete
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\obj\Debug\netcoreapp3.1\Control App.dll
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\obj\Debug\netcoreapp3.1\Control App.pdb
+C:\Users\user\Desktop\SIL-QA\Control App\Control App\obj\Debug\netcoreapp3.1\Control App.genruntimeconfig.cache

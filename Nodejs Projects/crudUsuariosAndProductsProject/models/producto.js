@@ -1,21 +1,23 @@
 import Joi from 'joi';
 import mongoose from 'mongoose';
 
-const Producto = mongoose.model('Producto', new mongoose.Schema({
+const Producto = mongoose.model(
+  'Producto',
+  new mongoose.Schema({
     price: {
       type: Number,
       required: true,
     },
     amount: {
-        type: Number,
-        required: true,
-      },
-      description: {
-        type: String,
-        required: true,
-        minlength: 1,
-      },
-  }),
+      type: Number,
+      required: true,
+    },
+    description: {
+      type: String,
+      required: true,
+      minlength: 1,
+    },
+  })
 );
 
 function ValidarProducto(producto) {
@@ -28,4 +30,4 @@ function ValidarProducto(producto) {
   return producto, datos;
 }
 
-export {Producto, ValidarProducto};
+export { Producto, ValidarProducto };
