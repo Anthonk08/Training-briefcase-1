@@ -1,0 +1,43 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #ced8cd;
+}
+
+.header {
+
+}
+
+.header__title {
+
+}
+
+.header__menu {
+
+}
+
+.menu-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+.menu-list__item {
+
+}
+
+.menu-list__link {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.menu-list__link--cta {
+    background-color: #368a3d;
+}
