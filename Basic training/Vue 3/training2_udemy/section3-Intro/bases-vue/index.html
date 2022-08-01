@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js Intro</title>
+</head>
+<body>
+    <!--Vue tendra control absoluto de este div-->
+    <div id="myApp">
+        <h1>{{quote}}</h1>
+        <p> {{message}} </p>
+        <blockquote>{{author}}</blockquote>
+
+        <button v-on:click="cambiarQuote">
+            Cambiar quote
+        </button>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="/bases-vue/app.js"></script>
+</body>
+</html>
