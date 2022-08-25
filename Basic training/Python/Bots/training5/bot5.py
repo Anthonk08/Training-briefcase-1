@@ -13,7 +13,7 @@ bot = telebot.TeleBot(TOKEN)
 
 def cmd_start(message):
     # Dar la bienvenida al usuario del bot
-    bot.reply_to(message, "Hola!, en que puedo ayudarte?")
+    bot.reply_to(message, "Hola, en que puedo ayudarte?")
     #print(message.chat.id) # Para saber cual es mi chat id
 
 # Responder a los mensajes sin poner comandos
@@ -76,3 +76,4 @@ if __name__ == '__main__':
     hilo_bot = threading.Thread(name="hilo_bot", target=recibir_mensajes)
     hilo_bot.start()
     bot.send_message(MI_CHAT_ID, "Bienvenido a mi chat de Telegram te saluda Kira el bot!!")
+
