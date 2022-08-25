@@ -1,16 +1,17 @@
-from cgitb import text
-import os
-import qrcode
+import pyshorteners
 
+from cgitb import text
 from argparse import Action
 from socket import timeout
 from telegram.ext import Updater, CommandHandler, ConversationHandler, MessageHandler, Filters, CallbackQueryHandler
 from telegram import ChatAction, InlineKeyboardButton, InlineKeyboardMarkup
 
 INPUT_TEXT = 0
+INPUT_URL = 0
 
 # COMANDO INICIAR CONVERSACION
 def start(update, context):
+    """
     button1 = InlineKeyboardButton(
         text='Linkedin del autor',
         url='https://www.linkedin.com/in/anthony-tineo-cabreja-0835b7210/'
@@ -30,48 +31,41 @@ def start(update, context):
             [InlineKeyboardButton(text='Generar QR', callback_data='qr')],
         ])
     )
+    """
+    update.message.reply_text(
+        text = 'Hola, bienvenido, que deseas hacer?',
+        reply_markup = InlineKeyboardMarkup([
+            [InlineKeyboardButton(text='Acortar URL', callback_data='url')],
+        ])
+    )
 
-# Comando QR
-def qr_command_handler(update, context):
-    update.message.reply_text('Enviame el texto para generar un codigo QR')
-    return INPUT_TEXT
-
-# Callback para llamar el comando QR
-def qr_callback_handler(update, context):
+# Callback para llamar el comando URL
+def url_callback_handler(update, context):
     query = update.callback_query
     query.answer()
     query.edit_message_text(
-        text='Enviame el texto para generar un codigo QR'
+        text='Enviame un enlace para acortarlo'
     )
     return INPUT_TEXT
 
-# Generador del codigo QR
-def generate_qr(text):
-    filename = text + '.jpg'
-    img = qrcode.make(text)
-    img.save(filename)
-    return filename
-
-# Enviar el codigo QR al usuario en el chat
-def send_qr(filename, chat):
-    # Realizar acciones, muesta por ejemplo: fulano esta escribiendo
-    chat.send_action(
-        action = ChatAction.UPLOAD_PHOTO,
-        timeout=None
-    )
-    chat.send_photo(
-        photo = open(filename, 'rb')
-    )
-    os.unlink(filename)
-
-# Input text, toma el texto que envia el usuario
-def input_text(update, context):
-    text = update.message.text
-    filename = generate_qr(text)
+# Input url, toma el enlace que envia el usuario
+def input_url(update, context):
+    url = update.message.text
     # El identificador chat muestra datos del usuario, importante
     chat = update.message.chat
-    send_qr(filename, chat)
+    # Utilizar el api de tercero para acortar la url
+    s = pyshorteners.Shortener()
+    short = s.chilpit.short(url)
+
+    chat.send_action(
+        action = ChatAction.TYPING,
+        timeout=None
+    )
+    chat.send_message(
+        text = short
+    )
     return ConversationHandler.END
+
 
 if __name__ == '__main__':
     updater = Updater(token='5787662693:AAGmzkgi-AcYNI9y-7gTU8gksJszdUJAXWA', use_context=True)
@@ -82,11 +76,10 @@ if __name__ == '__main__':
 
     dp.add_handler(ConversationHandler(
         entry_points=[
-            CommandHandler('qr', qr_command_handler),
-            CallbackQueryHandler(pattern='qr', callback=qr_callback_handler)
+            CallbackQueryHandler(pattern='url', callback=url_callback_handler)
         ],
         states={
-            INPUT_TEXT: [MessageHandler(Filters.text, input_text)]
+            INPUT_URL: [MessageHandler(Filters.text, input_url)]
         },
         fallbacks=[]
     ))
