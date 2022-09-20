@@ -19,26 +19,21 @@ const puerta = {
     "inventario": null,
 }
 
-function Casa(valor, terreno, color) {
-    //Atributos
-    this.valor = valor;
-    this.terreno = terreno;
-    this.color = color;
-
-    //Metodos
-    this.darTecho = function() {
-        alert(`Todos los habitantes de la casa tienen techo`);
-    }
-
-    this.darProteccion = function() {
-        alert(`Todos los habitantes de la casa estan protegidos`);
-    }
-
+const yo = {
+    nombre: "Anthony",
+    edad: 26,
+    direccion: "Calle Vanessa Ramirez Faña, casa #24",
+    carros: [
+        {name: "Ford", models: ["Mustang", "Fusion", "F150"]},
+        {name: "Nissan", models: ["Gtr", "Sentra", "Tsuru"]},
+        {name: "Ferrari", models: ["Enzo", "Maranello", "GTC4Lusso"]},
+    ],
 }
 
-// Creacion de objeto
-const casa1 = new Casa(1000000, 450, "Azul");
-console.log(puerta.__proto__);
+for(x in yo.carros){
+    alert(`Marca del vehiculo: ${yo.carros[x].name}`);
+    for(y in yo.carros[x].models){
+        alert(`Modelo: ${yo.carros[x].models[y]}`);
+    }
+}
 
-let name = "Anthony"
-console.log(name.__proto__);
